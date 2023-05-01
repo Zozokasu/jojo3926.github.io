@@ -1,0 +1,40 @@
+/* style.css */
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+    text-align: center
+  }
+
+  ul {
+    display: flex;
+    text-align: center
+    
+  }
+  div {
+    border: 2px solid #b2b2b2
+  }
+  .container {
+    text-align: center
+    
+  }
+
+  li {
+    text-align: center
+  }
+  body {
+    text-align: center
+  }
+  .item{
+    text-align: center
+    
+  }

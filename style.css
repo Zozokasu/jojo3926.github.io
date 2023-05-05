@@ -1,40 +1,140 @@
 /* style.css */
+:root {
+  --main-color: aliceblue;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, rgb(236, 255, 249), rgb(128, 122, 133));
+}
+#zokasuTitle{
+  
+}
+#zokasu {
+  text-align: center;
+  color: rgb(29, 29, 29);
+  vertical-align: middle;
+}
+
+#zokasuDescription {
+  color: rgb(29, 29, 29);
+}
+
+
+#maintitle {
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+  background-color: rgb(250, 253, 255);
+  display: inline-block;
+}
+
+#basicinfo {
+  background-color: rgb(184, 55, 87);
+}
+
+#products {
+  background-color: rgb(58, 131, 51);
+  margin-bottom: 10em;
+}
+
+.content {
+  background-color: rgb(184, 55, 87);
+  width: 25em;
+  margin: 0 auto;
+  margin-top: 10em;
+  padding-bottom: 1em;
+  border-radius: 1em;
+}
+
+.content-title {
+  padding-top: 1em;
+  font-size: 2.2em;
+  color: var(--main-color);
+}
+
+.content-title::after {
+  display: block;
+  content: "";
+  height: 0.1em;
+  width: 4em;
+  margin: 0 auto;
+  border-radius: 0.1em;
+  margin-top: 0.6em;
+  background-color: var(--main-color);
+}
+
+.content-list {
+  padding: 10px;
+}
 
 h1 {
-    font-family: Arial, sans-serif;
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    font-family: Georgia, serif;
-    font-size: 18px;
-    color: #666;
-    line-height: 1.5;
-    text-align: center
-  }
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  color: var(--main-color);
+  margin-bottom: 1em;
+}
 
-  ul {
-    display: flex;
-    text-align: center
-    
-  }
-  div {
-    border: 2px solid #b2b2b2
-  }
-  .container {
-    text-align: center
-    
-  }
+.headline {
+  font-size: 5em;
+  text-align: left;
+  margin-left:5vw;
+  color:rgb(29, 29, 29)
+}
+.headline::after{
+  display: block;
+  content: "";
+  height: 0.07em;
+  width:80%;
+  margin-left:0.3em;
+  margin-right:10vw;
+  border-radius: 0.1em;
+  margin-top: -0.2em;
+  background-color: rgb(68, 68, 68)
+}
 
-  li {
-    text-align: center
-  }
-  body {
-    text-align: center
-  }
-  .item{
-    text-align: center
-    
-  }
+p {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  color: var(--main-color);
+  line-height: 1.5;
+  text-align: center
+}
+
+ul {
+  display: flex;
+  text-align: center
+} 
+
+.container {
+  text-align: center
+}
+
+dl {
+  padding: 0.5em;
+}
+
+dt {
+  text-align: center;
+  font-size: 1.75em;
+  color: var(--main-color);
+}
+
+dd {
+  color: var(--main-color);
+  margin: 0 auto;
+  max-width: 15em
+}
+
+li {
+  text-align: center
+}
+
+body {
+  text-align: center
+}
+
+.item {
+  text-align: center
+}

@@ -1,45 +1,87 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Zozokasu</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+	<script type="importmap">
+  	{
+   	 "imports": {
+   	   "three": "https://unpkg.com/three@0.152.2/build/three.module.js",
+      	"three/addons/": "https://unpkg.com/three@0.152.2/examples/jsm/"
+    	}
+  	}
+	</script>
+	<script type="module" src="js/zozokasu.js"></script>
 </head>
+
 <body>
-	<header>
-		<h1>Zozokasu's Portfolio</h1>
-	</header>
-	<main>
-    <div class="container">
-      <div class="item">Item 1</div>
-      <div class="item">Item 2</div>
-      <div class="item">Item 3</div>
-      <div class="item">Item 4</div>
-    </div>
-		<section>
-			<h2>About Me</h2>
-			<p>Insert your text here...</p>
-		</section>
-		<section>
-			<h2>Portfolio</h2>
+	<section id="maintitle">
+		<canvas class="mainCanvas" id="mainCanvas" width="600" height="600">
+		</canvas>
+		<hgroup id="zokasuTitle">
+			<h1 id="zokasu">Zozokasu</h1>
+			<p id="zokasuDescription">Zozokasu（読み：ぞぞかす）のサイトです</p>
+		</hgroup>
+	</section>
+	<h1 class="headline">
+		基本情報
+	</h1>
+	<section class="content" id="basicinfo">
+		<h2 class="content-title">
+			やってること
+		</h2>
+		<dl>
+			<dt>個人開発</dt>
+			<dd>個人や少人数で色々なものを<br>制作・開発しています。</dd>
+		</dl>
+		<dl>
+			<dt>VR</dt>
+			<dd>「NeosVR」というマイナーな<br>プラットフォームで活動しています。</dd>
+		</dl>
+		<dl>
+			<dt>創作</dt>
+			<dd>作曲したり、モデリングしたりしています。<br>CubaseやBlender等。</dd>
+		</dl>
+		<dl>
+			<dt>あそび</dt>
+			<dd>SpaceEngineersとか、Civilizationとか、Stellarisとか。</dd>
+		</dl>
+
+
+	</section>
+	<section class="content" id="products">
+		<h2 class="content-title">
+			制作物・関わったもの
+		</h2>
+		<dl>
+			<dt>NeosFesta4</dt>
+			<dd>ワールドの一部演出を担当しました。</dd>
+		</dl>
+		<dl>
+			<dt>仮想遷都 Toa-改-</dt>
+			<dd>ワールドの一部演出を担当しました。</dd>
+		</dl>
+		<dl>
+			<dt>このサイト</dt>
+			<dd>きちんと作った<br>Webページはこれが初めてです。</dd>
+		</dl>
+	</section>
+	<h1 class="headline">
+		Contacts
+	</h1>
+	<div>
+		<section class="small-content">
 
 		</section>
-		<section>
-			<h2>Contact Me</h2>
-			<form action="submit-form.php" method="post">
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" required>
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required>
-				<label for="message">Message:</label>
-				<textarea id="message" name="message" required></textarea>
-				<button type="submit">Send</button>
-			</form>
-		</section>
-	</main>
+	</div>
 	<footer>
-		<p>&copy; 2023 Zozokasu</p>
+		Copyright &copy; 2023 Zozokasu All Rights Reserved.
 	</footer>
 </body>
+
 </html>
